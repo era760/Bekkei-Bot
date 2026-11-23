@@ -59,7 +59,7 @@ export class TimerManager {
    */
   public async restoreTimer(client: Client): Promise<void> {
     const saved = await loadTimerData();
-    if (!saved) return;
+    if (!saved || !saved.channelId) return;
 
     this.currentTimerData = saved;
     const now = Date.now();
