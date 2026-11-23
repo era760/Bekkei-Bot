@@ -13,9 +13,7 @@ import {
 const DISBOARD_BOT_ID = "302050872383242240";
 const BUMP_NOTIFICATION_ROLE_ID = "1573895073714671767";
 
-// 本番用: 2 * 60 * 60 * 1000
-// テスト用: 10 * 1000
-const BUMP_INTERVAL_MS = 10 * 1000;
+const BUMP_INTERVAL_MS = 2 * 60 * 60 * 1000;
 
 // Botごとに「成功」とみなすキーワード(小文字で記述)
 const SUCCESS_KEYWORDS_BY_BOT_ID: Record<string, string[]> = {
