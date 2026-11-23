@@ -1,14 +1,5 @@
 import "dotenv/config";
-import {
-  Client,
-  Events,
-  GatewayIntentBits,
-  type Message,
-  REST,
-  roleMention,
-  Routes,
-  SlashCommandBuilder,
-} from "discord.js";
+import { Client, Events, GatewayIntentBits, type Message, roleMention } from "discord.js";
 
 const DISBOARD_BOT_ID = "302050872383242240";
 const BUMP_NOTIFICATION_ROLE_ID = "1573895073714671767";
